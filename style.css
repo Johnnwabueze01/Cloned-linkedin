@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .container {
+    min-height: 100vh;
+  }
+  
+  .loader {
+    border-top-color: #3498db; /* Blue loader */
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  li {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  li.correct {
+    background-color: #008000; /* Blue for correct answer */
+    color: white;
+  }
+  
+  li.wrong {
+    background-color: #dc2626; /* Red for wrong answer */
+    color: white;
+  }
+  
+  .bg-blue-500 {
+    background-color: #2563eb;
+  }
+  
+  .bg-red-500 {
+    background-color: #dc2626;
+  }
+  
+  .bg-green-500:hover,
+  .bg-blue-500:hover,
+  .bg-red-500:hover {
+    /* Remove hover effects */
+    background-color: inherit;
+  }
+  
